@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<testCase version="7.3.1.0">
+    <general>
+        <owner>lx</owner>
+    </general>
+    <execution>
+        <parameters version="7.3.1.0">
+            <parameters escape="true">
+                <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
+                    <param1 pt:datatype="custom1">Item1</param1>
+                    <param2 pt:datatype="custom2">Item0</param2>
+                    <b_param pt:datatype="BOOLEAN"/>
+                    <b_param2 pt:datatype="BOOLEAN"/>
+                    <int_param3 pt:datatype="INTEGER"/>
+                    <double_param4 pt:datatype="DOUBLE"/>
+                    <double_param4 pt:datatype="DOUBLE"/>
+                </parameters>
+            </parameters>
+            <parametersTypes>
+                <item name="custom1">
+                    <items>
+                        <item name="Item0">
+                            <description>descr0</description>
+                        </item>
+                        <item name="Item1"/>
+                        <item name="Item2">
+                            <description>descr2</description>
+                        </item>
+                    </items>
+                </item>
+                <item name="custom2">
+                    <items>
+                        <item name="Item0"/>
+                    </items>
+                </item>
+            </parametersTypes>
+        </parameters>
+    </execution>
+    <procedures>
+        <item name="main"/>
+    </procedures>
+</testCase>
