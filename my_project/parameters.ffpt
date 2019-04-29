@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ParameterTree version="7.3.1.0">
+    <parameters escape="true">
+        <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
+            <param123/>
+            <param1 pt:datatype="pf_ct1">Item1</param1>
+        </parameters>
+    </parameters>
+    <parametersTypes>
+        <item name="pf_ct1">
+            <items>
+                <item name="Item0">
+                    <description>12</description>
+                </item>
+                <item name="Item1"/>
+                <item name="Item2"/>
+            </items>
+        </item>
+    </parametersTypes>
+</ParameterTree>
