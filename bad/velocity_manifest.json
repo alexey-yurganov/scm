@@ -1,0 +1,43 @@
+{
+    "defaultData": {
+        "commandSequence": [
+            "%file% %parameterNameValuePairList%"
+        ],
+        "description": "%file% script to set device out of service state",
+        "executionMessages": {
+            "error": "^.*(ERROR|CRITICAL).*",
+            "info": "^.*(DEBUG|INFO).*",
+            "ok": "^.*(verified).*",
+            "warning": "^.*(WARNING).*"
+        },
+        "headline": "%file% to set out of service",
+        "hidden": false,
+        "language": "python",
+        "namespace": "triggered",
+        "owner": "Nokia",
+        "parameters": [],
+        "testCaseId": "TC.CR.%file%",
+        "testCaseName": "Data plugin %file%",
+        "timeout": 10,
+        "verdictMethod": "EXIT_CODE_VERDICT_PARSING",
+        "verdictParsing": {
+            "failTest": "Finished: FAILED",
+            "failTestIfPassing": "Failure number \\d+",
+            "passTest": "Finished: PASSED",
+            "passTestIfNotAlreadyFailed": "SUCCESS"
+        }
+    },
+    "fileSets": [
+        {
+            "fileNameMatch": "error_test\\.py",
+            "parameters": [
+                {
+                    "description": "Device ID",
+                    "name": "deviceId",
+                    "type": "TEXT",
+                    "value": ""
+                }
+            ]
+        }
+    ]
+}
