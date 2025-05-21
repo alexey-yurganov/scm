@@ -32,8 +32,8 @@
             "fileNameMatch": "error_test\\.py",
             "parameters": [
  {
-                    "description": "Device ID",
-                    "name": "deviceId",
+                    "description": "Resource id",
+                    "name": "resourcesIds",
                     "type": "TEXT",
                     "value": ""
                 }
